@@ -1,0 +1,243 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(uirt2_raw) on Thu Dec  6 11:10:43 2012
+#
+# contributed by 
+#
+# brand:                      xms
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  xms
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       8817  4365
+  one           553  1600
+  zero          553   506
+  ptrail        546
+  repeat       8816  2163
+  pre_data_bits   16
+  pre_data       0x4FB
+  gap          104424
+  toggle_bit_mask 0x0
+
+      begin codes
+          KEY_MUTE                 0xD827
+          KEY_VOLUMEDOWN           0x807F
+          KEY_VOLUMEUP             0x40BF
+          KEY_AUDIO                0x20DF
+      end codes
+
+end remote
+
+
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(uirt2_raw) on Thu Dec  6 12:08:42 2012
+#
+# contributed by 
+#
+# brand:                       panasonic
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  panasonic
+  bits           16
+  flags SPACE_ENC
+  eps            30
+  aeps          100
+
+  header       3400  1650
+  one           439  1210
+  zero          439   360
+  ptrail        438
+  pre_data_bits   32
+  pre_data       0x40040100
+  gap          72100
+  min_repeat      1
+#  suppress_repeat 1
+#  uncomment to suppress unwanted repeats
+  toggle_bit_mask 0x0
+
+      begin codes
+          KEY_MUTE                 0x4C4D
+          KEY_VOLUMEUP             0x0405
+          KEY_VOLUMEDOWN           0x8485
+          KEY_CHANNELUP            0x2C2D
+          KEY_CHANNELDOWN          0xACAD
+          KEY_POWER                0xBCBD
+          KEY_TV                   0xA0A1
+      end codes
+
+end remote
+
+#
+# this config file was automatically generated
+# using lirc-0.8.3pre1(default) on Wed Sep 10 00:14:36 2008
+#
+# contributed by Tim Davis
+#
+# brand: Panasonic
+# model no. of remote control: N2QAYB000239
+# devices being controlled by this remote:
+#  Viera TX-32LZD80 LCD TV
+#
+# Notes
+#
+# 'Vcr' prefixed codes are generated when the switch is in the VCR position,
+# 'Dvd' codes when in the DVD position.
+#
+# VcrRewind and VcrFFwd are generated instead of VcrSkipBack
+# and VcrSkipFwd when holding the buttons down. Similarly for
+# the DvdSkip buttons.
+#
+# Holding down VcrPause generates VcrFFwd.
+# Holding down DvdPause generates DvdSkipFwd.
+#
+#  name  Panasonic_N2QAYB000239
+#
+
+begin remote
+
+  name  pan
+  bits           32
+  flags SPACE_ENC
+  eps            30
+  aeps          100
+
+  header       3571  1634
+  one           497  1239
+  zero          497   366
+  ptrail        479
+  pre_data_bits   16
+  pre_data       0x4004
+  gap          73900
+  toggle_bit_mask 0x0
+
+      begin codes
+          Power                    0x0100BCBD
+          TV                       0x01400C4D
+          AV                       0x0100A0A1
+          Aspect                   0x01207B5A
+          Link                     0x01908D1C
+          Option                   0x0190E574
+          SDCard                   0x0190D544
+          Guide                    0x0190E170
+          Exit                     0x0100CBCA
+          Up                       0x01005253
+          Down                     0x0100D2D3
+          Left                     0x01007273
+          Right                    0x0100F2F3
+          Ok                       0x01009293
+          Menu                     0x01004A4B
+          Return                   0x01002B2A
+          Red                      0x01000E0F
+          Green                    0x01008E8F
+          Yellow                   0x01004E4F
+          Blue                     0x0100CECF
+          Text                     0x0180C041
+          Sttl                     0x0180A021
+          Index                    0x01801091
+          Hold                     0x01809011
+          1                        0x01000809
+          2                        0x01008889
+          3                        0x01004849
+          4                        0x0100C8C9
+          5                        0x01002829
+          6                        0x0100A8A9
+          7                        0x01006869
+          8                        0x0100E8E9
+          9                        0x01001819
+          0                        0x01009899
+          Info                     0x01009C9D
+          Mute                     0x01004C4D
+          ProgUp                   0x01002C2D
+          ProgDown                 0x0100ACAD
+          VolUp                    0x01000405
+          VolDown                  0x01008485
+          VcrProgDown              0x0900ACA5
+          VcrProgUp                0x09002C25
+          VcrSkipBack              0x09004049
+          VcrSkipFwd               0x0900C0C9
+          VcrRewind                0x0900929B
+          VcrFFwd                  0x0900525B
+          VcrStop                  0x09000009
+          VcrPause                 0x09006069
+          VcrPlay                  0x09005059
+          VcrPower                 0x0900BCB5
+          VcrRec                   0x09001019
+          DvdProgDown              0x0D00ACA1
+          DvdProgUp                0x0D002C21
+          DvdSkipBack              0x0D00929F
+          DvdSkipFwd               0x0D00525F
+          DvdRewind                0x0D00202D
+          DvdFFwd                  0x0D00A0AD
+          DvdStop                  0x0D00000D
+          DvdPause                 0x0D00606D
+          DvdPlay                  0x0D00505D
+          DvdPower                 0x0D00BCB1
+          DvdRec                   0x0D00101D
+          N                        0x01003031
+          Audio                    0x01008C8D
+          DirectTvRec              0x01909100
+      end codes
+
+end remote
+
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(uirt2_raw) on Sun Dec  9 06:08:08 2012
+#
+# contributed by 
+#
+# brand:                       xxms
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  xxms
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       8826  4337
+  one           564  1600
+  zero          564   481
+  ptrail        564
+  repeat       8827  2147
+  pre_data_bits   16
+  pre_data       0x4FB
+  gap          104422
+  toggle_bit_mask 0x0
+
+      begin codes
+          KEY_MUTE                 0xD827
+          KEY_VOLUMEUP             0x40BF
+          KEY_VOLUMEDOWN           0x807F
+          KEY_AUDIO                0x20DF
+      end codes
+
+end remote
+
+

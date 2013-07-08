@@ -1,0 +1,79 @@
+opening a connection to the CEC adapter...
+DEBUG:   [              96]	unregistering all CEC clients
+DEBUG:   [              97]	Broadcast (F): osd name set to 'Broadcast'
+DEBUG:   [              97]	InitHostCEC - vchiq_initialise succeeded
+DEBUG:   [              98]	InitHostCEC - vchi_initialise succeeded
+DEBUG:   [              98]	InitHostCEC - vchi_connect succeeded
+DEBUG:   [              98]	logical address changed to Broadcast (f)
+DEBUG:   [              99]	RegisterLogicalAddress - registering address e
+DEBUG:   [             280]	logical address changed to Audio (5)
+DEBUG:   [             280]	logical address changed to Free use (e)
+DEBUG:   [             280]	Open - vc_cec initialised
+NOTICE:  [             280]	connection opened
+DEBUG:   [             281]	<< Broadcast (F) -> TV (0): POLL
+DEBUG:   [             281]	initiator 'Broadcast' is not supported by the CEC adapter. using 'Free use' instead
+TRAFFIC: [             282]	<< e0
+DEBUG:   [             282]	processor thread started
+DEBUG:   [             372]	command 'POLL' was not acked by the controller
+DEBUG:   [             373]	initiator 'Broadcast' is not supported by the CEC adapter. using 'Free use' instead
+TRAFFIC: [             373]	<< e0
+DEBUG:   [             464]	command 'POLL' was not acked by the controller
+DEBUG:   [             464]	>> POLL not sent
+DEBUG:   [             464]	TV (0): device status changed into 'not present'
+NOTICE:  [             464]	registering new CEC client - v2.0.5
+DEBUG:   [             465]	detecting logical address for type 'recording device'
+DEBUG:   [             465]	trying logical address 'Recorder 1'
+DEBUG:   [             465]	<< Recorder 1 (1) -> Recorder 1 (1): POLL
+TRAFFIC: [             465]	<< 11
+DEBUG:   [             465]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [             466]	logical address changed to Broadcast (f)
+DEBUG:   [             466]	RegisterLogicalAddress - registering address 1
+DEBUG:   [             647]	logical address changed to Free use (e)
+DEBUG:   [             647]	logical address changed to Recorder 1 (1)
+TRAFFIC: [             647]	<< 11
+DEBUG:   [             647]	>> POLL not sent
+DEBUG:   [             647]	using logical address 'Recorder 1'
+DEBUG:   [             648]	Recorder 1 (1): device status changed into 'handled by libCEC'
+DEBUG:   [             648]	Recorder 1 (1): power status changed from 'unknown' to 'on'
+DEBUG:   [             648]	Recorder 1 (1): CEC version 1.4
+DEBUG:   [             648]	AllocateLogicalAddresses - device '0', type 'recording device', LA '1'
+DEBUG:   [             648]	Recorder 1 (1): osd name set to 'CECTester'
+DEBUG:   [             648]	Recorder 1 (1): menu language set to 'eng'
+DEBUG:   [             649]	GetPhysicalAddress - physical address = 1000
+DEBUG:   [             649]	AutodetectPhysicalAddress - autodetected physical address '1000'
+DEBUG:   [             649]	Recorder 1 (1): physical address changed from ffff to 1000
+DEBUG:   [             649]	<< Recorder 1 (1) -> broadcast (F): physical adddress 1000
+TRAFFIC: [             650]	<< 1f:84:10:00:01
+NOTICE:  [             801]	CEC client registered: libCEC version = 2.0.5, client version = 2.0.5, firmware version = 1, logical address(es) = Recorder 1 (1) , physical address: 1.0.0.0, host: armv6l-unknown-linux-gnueabihf, features: 'P8 USB' 'P8 USB detect' 'RPi', git revision: 576bebd, compiled on: Fri Dec 28 12:45:36 UTC 2012 by pi@raspberrypi on Linux 3.2.27+ (armv6l)
+DEBUG:   [             801]	<< Recorder 1 (1) -> TV (0): OSD name 'CECTester'
+DEBUG:   [             801]	<< Recorder 1 (1) -> TV (0): POLL
+TRAFFIC: [             801]	<< 10
+DEBUG:   [             892]	command 'POLL' was not acked by the controller
+TRAFFIC: [             892]	<< 10
+DEBUG:   [             983]	command 'POLL' was not acked by the controller
+DEBUG:   [             983]	>> POLL not sent
+DEBUG:   [             983]	not sending command 'set osd name': destination device 'TV' marked as not present
+DEBUG:   [             984]	<< requesting power status of 'TV' (0)
+DEBUG:   [             984]	<< Recorder 1 (1) -> TV (0): POLL
+TRAFFIC: [             984]	<< 10
+DEBUG:   [            1075]	command 'POLL' was not acked by the controller
+TRAFFIC: [            1075]	<< 10
+DEBUG:   [            1166]	command 'POLL' was not acked by the controller
+DEBUG:   [            1166]	>> POLL not sent
+DEBUG:   [            1166]	not sending command 'give device power status': destination device 'TV' marked as not present
+TRAFFIC: [            1167]	<< 50:44:6c:00
+DEBUG:   [            1168]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [            1168]	logical address changed to Broadcast (f)
+DEBUG:   [            1168]	RegisterLogicalAddress - registering address 5
+DEBUG:   [            1349]	logical address changed to Recorder 1 (1)
+DEBUG:   [            1349]	logical address changed to Audio (5)
+DEBUG:   [            1440]	command 'user control pressed' was not acked by the controller
+DEBUG:   [            1440]	unregistering all CEC clients
+NOTICE:  [            1440]	unregistering client: libCEC version = 2.0.5, client version = 2.0.5, firmware version = 1, logical address(es) = Recorder 1 (1) , physical address: 1.0.0.0, host: armv6l-unknown-linux-gnueabihf, features: 'P8 USB' 'P8 USB detect' 'RPi', git revision: 576bebd, compiled on: Fri Dec 28 12:45:36 UTC 2012 by pi@raspberrypi on Linux 3.2.27+ (armv6l)
+DEBUG:   [            1441]	Recorder 1 (1): power status changed from 'on' to 'unknown'
+DEBUG:   [            1441]	Recorder 1 (1): CEC version unknown
+DEBUG:   [            1441]	Recorder 1 (1): osd name set to 'Recorder 1'
+DEBUG:   [            1441]	Recorder 1 (1): device status changed into 'unknown'
+DEBUG:   [            1441]	unregistering all CEC clients
+DEBUG:   [            1442]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [            1442]	logical address changed to Broadcast (f)

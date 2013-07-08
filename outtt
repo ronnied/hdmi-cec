@@ -1,0 +1,79 @@
+opening a connection to the CEC adapter...
+DEBUG:   [              81]	unregistering all CEC clients
+DEBUG:   [              81]	Broadcast (F): osd name set to 'Broadcast'
+DEBUG:   [              82]	InitHostCEC - vchiq_initialise succeeded
+DEBUG:   [              82]	InitHostCEC - vchi_initialise succeeded
+DEBUG:   [              83]	InitHostCEC - vchi_connect succeeded
+DEBUG:   [              83]	logical address changed to Broadcast (f)
+DEBUG:   [              84]	RegisterLogicalAddress - registering address e
+DEBUG:   [             264]	logical address changed to Audio (5)
+DEBUG:   [             265]	logical address changed to Free use (e)
+DEBUG:   [             265]	Open - vc_cec initialised
+NOTICE:  [             265]	connection opened
+DEBUG:   [             266]	<< Broadcast (F) -> TV (0): POLL
+DEBUG:   [             266]	initiator 'Broadcast' is not supported by the CEC adapter. using 'Free use' instead
+TRAFFIC: [             266]	<< e0
+DEBUG:   [             267]	processor thread started
+DEBUG:   [             297]	>> POLL sent
+DEBUG:   [             297]	TV (0): device status changed into 'present'
+DEBUG:   [             298]	<< requesting vendor ID of 'TV' (0)
+TRAFFIC: [             298]	<< e0:8c
+TRAFFIC: [             510]	>> 0f:87:00:80:45
+DEBUG:   [             511]	>> TV (0) -> Broadcast (F): device vendor id (87)
+DEBUG:   [             511]	TV (0): vendor = Panasonic (008045)
+DEBUG:   [             511]	expected response received (87: device vendor id)
+DEBUG:   [             511]	replacing the command handler for device 'TV' (0)
+NOTICE:  [             516]	registering new CEC client - v2.0.5
+DEBUG:   [             517]	detecting logical address for type 'playback device'
+DEBUG:   [             517]	trying logical address 'Playback 1'
+DEBUG:   [             517]	<< Playback 1 (4) -> Playback 1 (4): POLL
+TRAFFIC: [             517]	<< 44
+DEBUG:   [             518]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [             518]	logical address changed to Broadcast (f)
+DEBUG:   [             518]	RegisterLogicalAddress - registering address 4
+DEBUG:   [             699]	logical address changed to Free use (e)
+DEBUG:   [             699]	logical address changed to Playback 1 (4)
+TRAFFIC: [             700]	<< 44
+DEBUG:   [             700]	>> POLL not sent
+DEBUG:   [             700]	using logical address 'Playback 1'
+DEBUG:   [             700]	Playback 1 (4): device status changed into 'handled by libCEC'
+DEBUG:   [             700]	Playback 1 (4): power status changed from 'unknown' to 'on'
+DEBUG:   [             700]	Playback 1 (4): CEC version 1.4
+DEBUG:   [             701]	AllocateLogicalAddresses - device '0', type 'playback device', LA '4'
+DEBUG:   [             701]	Playback 1 (4): osd name set to 'CECTester'
+DEBUG:   [             701]	Playback 1 (4): menu language set to 'eng'
+DEBUG:   [             702]	GetPhysicalAddress - physical address = 1000
+DEBUG:   [             702]	AutodetectPhysicalAddress - autodetected physical address '1000'
+DEBUG:   [             702]	Playback 1 (4): physical address changed from ffff to 1000
+DEBUG:   [             702]	<< Playback 1 (4) -> broadcast (F): physical adddress 1000
+TRAFFIC: [             702]	<< 4f:84:10:00:04
+NOTICE:  [             853]	CEC client registered: libCEC version = 2.0.5, client version = 2.0.5, firmware version = 1, logical address(es) = Playback 1 (4) , physical address: 1.0.0.0, host: armv6l-unknown-linux-gnueabihf, features: 'P8 USB' 'P8 USB detect' 'RPi', git revision: 576bebd, compiled on: Fri Dec 28 12:45:36 UTC 2012 by pi@raspberrypi on Linux 3.2.27+ (armv6l)
+DEBUG:   [             854]	Playback 1 (4): vendor = Panasonic (008045)
+DEBUG:   [             854]	replacing the command handler for device 'Playback 1' (4)
+DEBUG:   [             854]	<< Playback 1 (4) -> TV (0): OSD name 'CECTester'
+TRAFFIC: [             854]	<< 40:47:43:45:43:54:65:73:74:65:72
+DEBUG:   [            1155]	<< requesting power status of 'TV' (0)
+TRAFFIC: [            1156]	<< 40:8f
+TRAFFIC: [            1336]	>> 04:00:47:00
+DEBUG:   [            1337]	>> TV (0) -> Playback 1 (4): feature abort ( 0)
+DEBUG:   [            1337]	marking opcode 'set osd name' as unsupported feature for device 'TV'
+TRAFFIC: [            1413]	>> 04:90:00
+DEBUG:   [            1414]	>> TV (0) -> Playback 1 (4): report power status (90)
+DEBUG:   [            1414]	TV (0): power status changed from 'unknown' to 'on'
+DEBUG:   [            1414]	expected response received (90: report power status)
+TRAFFIC: [            1416]	<< 10:44:6c
+DEBUG:   [            1416]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [            1416]	logical address changed to Broadcast (f)
+DEBUG:   [            1417]	RegisterLogicalAddress - registering address 1
+DEBUG:   [            1597]	logical address changed to Playback 1 (4)
+DEBUG:   [            1598]	logical address changed to Recorder 1 (1)
+DEBUG:   [            1688]	unregistering all CEC clients
+NOTICE:  [            1689]	unregistering client: libCEC version = 2.0.5, client version = 2.0.5, firmware version = 1, logical address(es) = Playback 1 (4) , physical address: 1.0.0.0, host: armv6l-unknown-linux-gnueabihf, features: 'P8 USB' 'P8 USB detect' 'RPi', git revision: 576bebd, compiled on: Fri Dec 28 12:45:36 UTC 2012 by pi@raspberrypi on Linux 3.2.27+ (armv6l)
+DEBUG:   [            1689]	Playback 1 (4): power status changed from 'on' to 'unknown'
+DEBUG:   [            1689]	Playback 1 (4): vendor = Unknown (000000)
+DEBUG:   [            1689]	Playback 1 (4): CEC version unknown
+DEBUG:   [            1689]	Playback 1 (4): osd name set to 'Playback 1'
+DEBUG:   [            1690]	Playback 1 (4): device status changed into 'unknown'
+DEBUG:   [            1690]	unregistering all CEC clients
+DEBUG:   [            1691]	UnregisterLogicalAddress - releasing previous logical address
+DEBUG:   [            1691]	logical address changed to Broadcast (f)

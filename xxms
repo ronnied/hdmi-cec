@@ -1,0 +1,42 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(uirt2_raw) on Sun Dec  9 06:08:08 2012
+#
+# contributed by 
+#
+# brand:                       xxms
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  xxms
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       8826  4337
+  one           564  1600
+  zero          564   481
+  ptrail        564
+  repeat       8827  2147
+  pre_data_bits   16
+  pre_data       0x4FB
+  gap          104422
+  toggle_bit_mask 0x0
+
+      begin codes
+          KEY_MUTE                 0xD827
+          KEY_VOLUMEUP             0x40BF
+          KEY_VOLUMEDOWN           0x807F
+          KEY_AUDIO                0x20DF
+      end codes
+
+end remote
+
+
